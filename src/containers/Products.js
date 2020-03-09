@@ -5,7 +5,6 @@ import { ProductsContext } from '../context/products-context';
 
 const Products = props => {
   const productList = useContext(ProductsContext).products;
-  console.log(productList)  
   return (
     <ul className="products-list">
       {productList.map(prod => (
